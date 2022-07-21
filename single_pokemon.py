@@ -3,6 +3,8 @@ import requests
 
 class SinglePokemon:
 
+    name_limit = {'limit': 100}
+
     def __init__(self, s_pokemon):
         self.url = "https://pokeapi.co/api/v2/pokemon/" + s_pokemon
         self.request = requests.get(self.url)
@@ -10,3 +12,5 @@ class SinglePokemon:
 
     def response_data(self):
         return SinglePokemonModel(self.resp_json)
+
+    

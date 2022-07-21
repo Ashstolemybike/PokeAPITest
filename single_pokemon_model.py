@@ -50,6 +50,10 @@ class SinglePokemonModel:
         self.game_19_details = self.game_19_version['name'], self.game_1_version['url']
         self.game_20_version = self.game_indices[19]['version']
         self.game_20_details = self.game_20_version['name'], self.game_1_version['url']
+        self.height = single_pokemon['height']
+        self.id = single_pokemon['id']
+        self.is_default = single_pokemon['is_default']
+        self.loc_encounter = single_pokemon['location_area_encounters']
 
 
 
