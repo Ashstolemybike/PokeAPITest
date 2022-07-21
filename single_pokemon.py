@@ -13,4 +13,4 @@ class SinglePokemon:
     def response_data(self):
         return SinglePokemonModel(self.resp_json)
 
-    
+

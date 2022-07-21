@@ -54,6 +54,6 @@ class SinglePokemonModel:
         self.id = single_pokemon['id']
         self.is_default = single_pokemon['is_default']
         self.loc_encounter = single_pokemon['location_area_encounters']
-
+        self.weight = single_pokemon['weight']
 
 
